@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#333333"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/header"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MENU MASJID"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"/>
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#000000ff"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="@string/keluar"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="6"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+        <!--            Jam Sholat-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:elevation="6dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:id="@+id/jamSholat"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="@drawable/card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/jam"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="Jam Sholat"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+<!--        Identitas Masjid-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:elevation="6dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:id="@+id/identitas"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="@drawable/card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/masjid"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="Identitas Masjid"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+            <!--            Jam Sholat-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:elevation="6dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:id="@+id/marquee"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/marquee"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Marquee"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--        Identitas Masjid-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:elevation="6dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:id="@+id/pengumuman"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/pengumuman"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Pengumuman"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--            Jam Sholat-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:elevation="6dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:id="@+id/slideshow"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/slideshow"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Slide Show"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--        Identitas Masjid-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:elevation="6dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:id="@+id/tagline"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/tagline"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="Tagline"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+</LinearLayout>
+</ScrollView>
